@@ -4,12 +4,7 @@ name: CI
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
+ 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -18,7 +13,11 @@ jobs:
   set-env:
     runs-on: ubuntu-latest
     steps:
-      - name: DEPLOY_VER
+      - name: Set environment variables
         run: |
           echo "GIT_SHA=${GITHUB_SHA}" >> $GITHUB_ENV
-          echo "GIT_BRANCH=${GITHUB_REF##*/}" >> $GITHUB_ENV  
+          echo "GIT_BRANCH=${GITHUB_REF##*/}" >> $GITHUB_ENV
+      - name: Use environment variables
+        run: |
+          echo "GIT_SHA=${GIT_SHA}"
+          echo "GIT_BRANCH=${GIT_BRANCH}" 
