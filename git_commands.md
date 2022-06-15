@@ -23,7 +23,7 @@ git add -f .gitignore
 git commit -m "Create gitignore file"
 git push git@github.com:mauka0712BR/Exadel.git
 
-#PR and Merge ware made in web browser
+#PR and Merge were made in web browser
 
 git clone git@github.com:mauka0712BR/Exadel.git
 
