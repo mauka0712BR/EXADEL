@@ -19,21 +19,9 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-
-       - name: Fetch action
-        id: pl
-        uses: Rishabh510/Path-lister-action@mmain
-        with:
-          path: ".github/"
-
-      - name: Output results
-        run: |
-          echo "${{ steps.pl.outputs.path_count }} file(s) with this extension:"
-          for i in ${{ steps.pl.outputs.paths }}; do
-          echo $i
-          done
+      - name: Check out repo        
+        uses: actions/checkout@v2
+      - run: echo " Print a single environment variable (the commit SHA ) - ${{ github.sha }} "
+      - run: echo "Print all environment variables"
+      - run:  env
