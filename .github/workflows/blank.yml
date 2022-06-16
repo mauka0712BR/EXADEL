@@ -38,8 +38,7 @@ jobs:
 #          echo "Hello from `echo ${GITHUB_SHA}`"
       - name: second job
         run: |
-          
-          echo "Day - $DAY__OF_THE_MONTH;"
+          echo "Day - $DAY_OF_THE_MONTH;"
           echo "Month - $MONTH;"
           echo "Year - $YEAR."
           
