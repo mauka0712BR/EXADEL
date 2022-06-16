@@ -30,7 +30,7 @@ jobs:
         run: |
           tree
           cat ./Task1/log.txt
-          echo "Hello from `echo ${GITHUB_SHA}`"
+          echo "Hello from `echo ${DEPLOY_VER}`"
       - name: second job
         run: |
           date 
