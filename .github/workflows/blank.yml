@@ -37,6 +37,10 @@ jobs:
           echo "Hello from `echo $DEPLOY_VER` commit"
 #          echo "Hello from `echo ${GITHUB_SHA}`"
       - name: second job
+        env:
+         YEAR: "2019"
+         MONTH: "December"
+         DAY_OF_THE_MONTH: "9"
         run: |
           echo "Day - $DAY_OF_THE_MONTH;"
           echo "Month - $MONTH;"
