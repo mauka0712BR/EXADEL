@@ -1,7 +1,9 @@
 # This is a basic workflow to help you get started with Actions
 
 name: CI
-
+env:
+  DEPLOY_VER: GITHUB_SHA
+  YEAR: 1990
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
@@ -31,6 +33,7 @@ jobs:
           tree
           cat ./Task1/log.txt
           echo "Hello from `echo $DEPLOY_VER`"
+          echo "Hello from `echo ${GITHUB_SHA}`"
       - name: second job
         run: |
           date 
