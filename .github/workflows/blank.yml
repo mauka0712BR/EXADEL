@@ -3,9 +3,9 @@
 name: CI
 env:
   DEPLOY_VER: 77686eb8d0a6bac23f91186147d022757c48f433;
-  YEAR: 2019;
-  MONTH: December;
-  DAY_OF_THE_MONTH: 9;
+  YEAR: 2019
+  MONTH: December
+  DAY_OF_THE_MONTH: 9
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
