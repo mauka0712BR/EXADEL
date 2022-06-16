@@ -45,5 +45,5 @@ jobs:
           echo "Day - $DAY_OF_THE_MONTH;"
           echo "Month - $MONTH;"
           echo "Year - $YEAR."
-          echo "My favorite day of week is $FAVORITE_DAY_OF_WEEK"
+          echo "My favorite day of week is `echo $FAVORITE_DAY_OF_WEEK'"
 
