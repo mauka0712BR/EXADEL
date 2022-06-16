@@ -23,7 +23,7 @@ jobs:
       - name: DEPLOY_VER       
         uses: actions/checkout@v2
       - run: tree
-      - run: cat /Task1/log.txt
+      - run: cat Task1/log.txt
       - run: echo "DEPLOY_VER=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
 
     
