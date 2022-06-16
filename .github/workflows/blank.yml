@@ -2,7 +2,7 @@
 
 name: CI
 env:
-  DEPLOY_VER: GITHUB_SHA
+  DEPLOY_VER: ${GITHUB_SHA}
   YEAR: 1990
 # Controls when the workflow will run
 on:
