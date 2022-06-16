@@ -25,4 +25,4 @@ jobs:
       - run: tree
       - run: cat Task1/log.txt
       - run: SHA=${GITHUB_SHA}
-      - run: echo '${GITHUB_SHA}' >> DEPLOY_VER
+      - run: echo "SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-8`"
