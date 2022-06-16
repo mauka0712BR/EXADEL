@@ -30,4 +30,4 @@ jobs:
         run: |
           tree
           cat ./Task1/log.txt
-          print "Hello from `echo ${GITHUB_SHA}`"
+          echo "Hello from `echo ${GITHUB_SHA}`"
