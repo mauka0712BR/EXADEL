@@ -29,5 +29,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           tree
-          cat /Task1/log.txt
+          cat ./Task1/log.txt
           
