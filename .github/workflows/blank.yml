@@ -39,7 +39,7 @@ jobs:
       - name: second job
         run: |
           
-          echo "Day - $DAY__OF_THE_MONTH;"
-          echo "Month - $MONTH;"
-          echo "Year - $YEAR.”
+          echo "Day - $DAY__OF_THE_MONTH;
+               Month - $MONTH;
+               Year - $YEAR.
           
