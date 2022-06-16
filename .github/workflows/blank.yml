@@ -20,8 +20,10 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repo        
+      - name: DEPLOY_VER       
         uses: actions/checkout@v2
       - run: tree
-      - run: echo "Print all environment variables"
-      - run:  env
+      - run: cat /Task1/log.txt
+      - run: echo "DEPLOY_VER=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
+
+    
