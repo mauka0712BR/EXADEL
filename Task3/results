@@ -1,0 +1,8 @@
+#link to "Hello World" page on ubuntu  
+http://ec2-54-90-205-145.compute-1.amazonaws.com/  
+  
+#link to "Hello World" page on CentOS  
+https://exadel-bucket.s3.amazonaws.com/task3/hello_world_ubuntu.jpg  
+  
+#link to "Hello Wordl" docker  
+https://exadel-bucket.s3.amazonaws.com/task3/docker_result.jpg
