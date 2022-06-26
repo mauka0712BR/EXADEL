@@ -12,11 +12,11 @@
         &nbsp;&nbsp;└── results  
         &nbsp;&nbsp;└── steps    
          &nbsp;&nbsp; &nbsp;&nbsp;└── centos  
-            &nbsp;&nbsp;└── Centos.tf  
-            &nbsp;&nbsp;└── centos.plan  
-            &nbsp;&nbsp;└── var.tf  
+           &nbsp;&nbsp;  &nbsp;&nbsp;└── Centos.tf  
+            &nbsp;&nbsp; &nbsp;&nbsp;└── centos.plan  
+            &nbsp;&nbsp; &nbsp;&nbsp;└── var.tf  
         &nbsp;&nbsp;  &nbsp;&nbsp;└── ubuntu    
-            &nbsp;&nbsp;└── install.sh    
-            &nbsp;&nbsp;└── ubuntu.plan  
-            &nbsp;&nbsp;└── ubuntu.tf  
-            &nbsp;&nbsp;└── var.tf  
+           &nbsp;&nbsp;  &nbsp;&nbsp;└── install.sh    
+           &nbsp;&nbsp;  &nbsp;&nbsp;└── ubuntu.plan  
+          &nbsp;&nbsp;   &nbsp;&nbsp;└── ubuntu.tf  
+          &nbsp;&nbsp;   &nbsp;&nbsp;└── var.tf  
