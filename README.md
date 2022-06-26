@@ -11,11 +11,11 @@
         &nbsp;&nbsp;└── README.md  
         &nbsp;&nbsp;└── results  
         &nbsp;&nbsp;└── steps    
-         &nbsp;&nbsp;└── centos  
+         &nbsp;&nbsp; &nbsp;&nbsp;└── centos  
             &nbsp;&nbsp;└── Centos.tf  
             &nbsp;&nbsp;└── centos.plan  
             &nbsp;&nbsp;└── var.tf  
-         &nbsp;&nbsp;└── ubuntu    
+        &nbsp;&nbsp;  &nbsp;&nbsp;└── ubuntu    
             &nbsp;&nbsp;└── install.sh    
             &nbsp;&nbsp;└── ubuntu.plan  
             &nbsp;&nbsp;└── ubuntu.tf  
