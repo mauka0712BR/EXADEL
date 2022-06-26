@@ -94,6 +94,7 @@ user_data= <<-EOF
 	echo "proxy=http://172.31.29.19:443" >> /etc/dnf/dnf.conf
 	yum update -y  
 	yum install httpd httpd-tools php php-mysqlnd -y  
+	sudo wget https://exadel-bucket.s3.amazonaws.com/dnf.conf -P /etc/dnf/ 
 	systemctl start httpd  
 	systemctl enable httpd  
 	usermod -a -G apache ec2-user  
