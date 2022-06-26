@@ -13,10 +13,10 @@
         &nbsp;&nbsp;└── steps  
         └── centos  
             &nbsp;&nbsp;└── Centos.tf  
-            &nbsp;&nbsp;└── centos.plan
-            &nbsp;&nbsp;└── var.tf
-        └── ubuntu  
-            &nbsp;&nbsp;└── install.sh  
-            &nbsp;&nbsp;└── ubuntu.plan
-            &nbsp;&nbsp;└── ubuntu.tf
-            &nbsp;&nbsp;└── var.tf
+            &nbsp;&nbsp;└── centos.plan  
+            &nbsp;&nbsp;└── var.tf  
+        └── ubuntu    
+            &nbsp;&nbsp;└── install.sh    
+            &nbsp;&nbsp;└── ubuntu.plan  
+            &nbsp;&nbsp;└── ubuntu.tf  
+            &nbsp;&nbsp;└── var.tf  
