@@ -19,4 +19,10 @@
          &nbsp;&nbsp;  &nbsp;&nbsp;   &nbsp;&nbsp;└── var.tf  
          &nbsp;&nbsp;└── README.md  
         &nbsp;&nbsp;└── results  
-        &nbsp;&nbsp;└── steps    
+        &nbsp;&nbsp;└── steps  
+        └── Task4  
+         &nbsp;&nbsp;└── README.md    
+        &nbsp;&nbsp;└── install.sh  
+        &nbsp;&nbsp;└── dockerfile  
+        &nbsp;&nbsp;└── steps  
+        &nbsp;&nbsp;└── .env  
