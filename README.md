@@ -4,10 +4,10 @@
 ├── README.md  
     └── Task1  
         &nbsp;&nbsp;└── README.md  
-    └── Task2  
+    ├── Task2  
         &nbsp;&nbsp;└── README.md  
         &nbsp;&nbsp;└── instance without ssh    
-    └── Task3  
+    ├── Task3  
          &nbsp;&nbsp; &nbsp;&nbsp;└── centos  
           &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;└── Centos.tf  
            &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;└── centos.plan  
@@ -20,7 +20,7 @@
          &nbsp;&nbsp;└── README.md  
         &nbsp;&nbsp;└── results  
         &nbsp;&nbsp;└── steps  
-        └── Task4  
+        ├── Task4  
          &nbsp;&nbsp;└── README.md    
         &nbsp;&nbsp;└── install.sh  
         &nbsp;&nbsp;└── dockerfile  
