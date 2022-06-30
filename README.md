@@ -23,7 +23,7 @@
         ├── Task4  
          &nbsp;&nbsp;└── README.md    
         &nbsp;&nbsp;└── docker-compose.yaml  
-        &nbsp;&nbsp;└── dockerfile 
+        &nbsp;&nbsp;└── dockerfile   
         &nbsp;&nbsp;└── install.sh  
         &nbsp;&nbsp;└── steps  
         &nbsp;&nbsp;└── .env  
