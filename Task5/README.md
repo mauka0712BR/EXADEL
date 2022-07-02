@@ -16,5 +16,5 @@ vi /etc/ssh/sshd_config
       ansible -i hosts -m ping all  
        &nbsp;&nbsp;  
     result:  
-     &nbsp;&nbsp;
+     &nbsp;&nbsp;  
      &nbsp;&nbsp;![Alt text](/Task5/screenshots/ansible_ping.jpg?raw=true "Title")
