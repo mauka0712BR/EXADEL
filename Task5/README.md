@@ -4,8 +4,8 @@ vi /etc/ssh/sshd_config
   
 1. install ansible  
   Commands:  
-   a. dnf update -y 
-   b. dnf install ansible -y  
+   dnf update -y 
+   dnf install ansible -y  
   Create ansible project directory:  
     mkdir /opt/ansible  
     cd /opt/ansible  
