@@ -14,5 +14,5 @@ vi /etc/ssh/sshd_config
     &nbsp;&nbsp;   echo "h2 ansible_user=root" >> /opt/ansible/hosts  
 2. Ping mashines with ansible:  
       ansible -i hosts -m ping all  
-    result:
-    ![Alt text](/Task5/screenshots/ansible_ping.jpg?raw=true "Title")
+    result:  
+     &nbsp;&nbsp;![Alt text](/Task5/screenshots/ansible_ping.jpg?raw=true "Title")
