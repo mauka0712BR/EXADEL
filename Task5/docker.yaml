@@ -1,0 +1,32 @@
+- name: Install docker in Rocky
+  hosts: docker
+  gather_facts: false
+  become: true
+  tasks:
+    - name: Upgrade all packages on servers
+      dnf:
+        name: '*'
+        state: latest
+
+    - name: Set up docker repository
+      shell: |
+        dnf install -y yum-utils
+        yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+      args:
+        warn: no
+
+    - name: Install the latest version of Docker Engine and containerd
+      dnf:
+        name:
+          - docker-ce
+          - docker-ce-cli
+          - containerd.io
+          - docker-compose-plugin
+      notify: Start and enable docker
+
+  handlers:
+    - name: Start and enable docker
+      systemd:
+        name: docker
+        state: started
+        enabled: yes
