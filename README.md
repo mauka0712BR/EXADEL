@@ -27,3 +27,10 @@
         &nbsp;&nbsp;└── install.sh  
         &nbsp;&nbsp;└── steps  
         &nbsp;&nbsp;└── .env  
+     ├── Task5   
+     &nbsp;&nbsp;  &nbsp;&nbsp;└── screenshots      
+          &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;└── ansible_ping.jpg    
+          &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;└── docker_install.jpg  
+         &nbsp;&nbsp;└── README.md    
+        &nbsp;&nbsp;└── docker.yaml  
+        &nbsp;&nbsp;└── hosts   
