@@ -15,4 +15,4 @@ vi /etc/ssh/sshd_config
 2. Ping mashines with ansible:  
       ansible -i hosts -m ping all  
     result:
-    ![Alt text](Exadel/Task5/screenshots/ansible_ping.jpg?raw=true "Title")
+    ![Alt text](/Task5/screenshots/ansible_ping.jpg?raw=true "Title")
