@@ -38,3 +38,8 @@ EXTRA
 &nbsp;&nbsp; enable aws_ec2 plugin and set default inventory direcrory in /etc/ansible/ansible.cfg  
 &nbsp;&nbsp;![Alt text](/Task5/screenshots/ansible_cfg_1.jpg?raw=true "Title")  
 &nbsp;&nbsp;![Alt text](/Task5/screenshots/ansible_cfg_2.jpg?raw=true "Title")  
+&nbsp;&nbsp; list dynamic inventory groups: 
+&nbsp;&nbsp;  
+&nbsp;&nbsp;  ansible-inventory --graph  
+&nbsp;&nbsp;&nbsp;&nbsp;  
+&nbsp;&nbsp;![Alt text](/Task5/screenshots/list_groups.jpg?raw=true "Title")
