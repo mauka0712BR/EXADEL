@@ -1,0 +1,56 @@
+- name: Install docker in Rocky
+  hosts: tag_dest_web
+  gather_facts: false
+  become: true
+  
+  tasks:
+
+  - name: Upgrade all packages on servers
+    dnf:
+      name: '*'
+      state: latest
+
+  - name: Set up docker repository
+    shell: |
+      dnf install -y yum-utils
+      yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    args:
+      warn: no
+
+  - name: Install the latest version of Docker Engine and containerd
+    dnf:
+      name:
+        - docker-ce
+        - docker-ce-cli
+        - containerd.io
+        - docker-compose-plugin
+        - python3
+
+  - name: Start and enable docker
+    systemd:
+      name: docker
+      state: started
+      enabled: yes
+    
+  - name: Install docker-compose
+    get_url:
+      url : https://github.com/docker/compose/releases/download/1.29.2/docker-compose-Linux-x86_64
+      dest: /usr/local/bin/docker-compose
+      mode: 'u+x,g+x'
+    
+  - name: Launch mysql database container
+    docker_container:
+      name: db
+      image: mysql:5.7
+      restart: true
+      env:
+        MYSQL_ROOT_PASSWORD: root
+      state: started
+  
+  - name: install php
+    docker_container:
+      name: php
+      image: php:latest
+      ports:
+        - 80:80
+      state: started
