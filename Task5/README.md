@@ -23,3 +23,18 @@ vi /etc/ssh/sshd_config
  result:   
      &nbsp;&nbsp;    
      &nbsp;&nbsp;![Alt text](/Task5/screenshots/docker_install.jpg?raw=true "Title")   
+&nbsp;&nbsp;  
+EXTRA  
+&nbsp;&nbsp;  
+&nbsp;&nbsp; Setup dynamic inventory:   
+&nbsp;&nbsp; 1. Install python3:  
+&nbsp;&nbsp;  dnf install python3 python3-pip -y  
+&nbsp;&nbsp; 2. install boto3 library:
+&nbsp;&nbsp; pip3 install boto3  
+&nbsp;&nbsp; 3. Create AWS config file:
+&nbsp;&nbsp; mkdir -p /opt/ansible/inventory  
+&nbsp;&nbsp; nano aws_ec2.yaml  
+&nbsp;&nbsp;![Alt text](/Task5/screenshots/aws_ec2_config.jpg?raw=true "Title")   
+&nbsp;&nbsp; enable aws_ec2 plugin and set default inventory direcrory in /etc/ansible/ansible.cfg
+&nbsp;&nbsp;![Alt text](/Task5/screenshots/ansible_cfg_1.jpg?raw=true "Title")  
+&nbsp;&nbsp;![Alt text](/Task5/screenshots/ansible_cfg_2.jpg?raw=true "Title")  
